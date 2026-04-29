@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+venv/
+env/
+# You can uncomment these if you don't want to push the index/data files, 
+# but for the hackathon submission it's usually okay to push the mock data.
+# standards.index
+# metadata.json
+# parsed_standards.json
