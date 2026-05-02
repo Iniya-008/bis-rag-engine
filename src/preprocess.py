@@ -23,26 +23,42 @@ def extract_text_from_pdf(pdf_path):
 
 def parse_standards_text(text):
     """
-    Parser to extract standard ID, Title, and Description.
-    Assumes a structured text format from the PDF like:
-    ID: IS 456
-    Title: Plain and Reinforced Concrete
-    Description: This is the description...
+    Parser to extract standard ID and Description from the real BIS SP 21 PDF.
+    Splits the document based on 'IS <number>' patterns.
     """
     standards = []
-    # Regex to catch blocks of ID, Title, Description
-    pattern = re.compile(r"ID:\s*(IS\s*\w+)\s*\nTitle:\s*(.*?)\s*\nDescription:\s*(.*?)(?=\nID:|\Z)", re.DOTALL)
-    matches = pattern.findall(text)
     
-    for match in matches:
-        std_id = match[0].strip()
-        title = match[1].strip()
-        description = match[2].strip().replace('\n', ' ')
-        standards.append({
-            "id": std_id,
-            "title": title,
-            "description": description
-        })
+    # Clean up whitespace and line breaks
+    text = re.sub(r'\s*\n\s*', ' ', text)
+    
+    # Regex to find standard numbers like "IS 456 : 2000" or "IS 383: 1970"
+    # We split the text by the "IS " prefix to get chunks
+    chunks = re.split(r'(?=IS\s+\d+)', text)
+    
+    for chunk in chunks:
+        chunk = chunk.strip()
+        if not chunk.startswith("IS"):
+            continue
+            
+        # Try to extract the ID and the description
+        # Matches "IS 456: 2000", "IS 2185 (Part 2): 1983", etc.
+        match = re.match(r'(IS\s+\d+(?:\s*\(.*?\))?(?:\s*:\s*\d+)?)\s*(.*)', chunk)
+        if match:
+            std_id = match.group(1).strip()
+            description = match.group(2).strip()
+            
+            # Use the first sentence or so as title, or just duplicate description if no clear title
+            title_match = re.split(r'\.|\,', description, 1)
+            title = title_match[0].strip() if title_match else std_id
+            
+            # Only keep chunks that actually look like real standards with some text
+            if len(description) > 10:
+                standards.append({
+                    "id": std_id,
+                    "title": title,
+                    "description": description[:1000] # Limit length to prevent massive chunks
+                })
+                
     return standards
 
 def process_all_pdfs(data_dir):

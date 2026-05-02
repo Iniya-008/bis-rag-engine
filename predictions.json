@@ -1,0 +1,182 @@
+[
+    {
+        "id": "PUB-01",
+        "query": "We are a small enterprise manufacturing 33 Grade Ordinary Portland Cement. Which BIS standard covers the chemical and physical requirements for our product?",
+        "expected_standards": [
+            "IS 269: 1989"
+        ],
+        "retrieved_standards": [
+            "IS 269:1989",
+            "IS 8112:1991",
+            "IS 12269:1987"
+        ],
+        "explanations": [
+            "Specification for ordinary portland cement, 33 grade (fourth revision). 1.10 SP 21 : 2005 SUMMARY OF",
+            "+ b) Final setting time in minutes \u2013 not more than 600. 3.4 Compressive Strength \u2014 2. Chemical Requirement \u2014 See Table 1. a) 72\u00b11 h, not less than 27 MPa 3. Physical Requirements b) 168\u00b12 h, not less than 37 MPa 3.1 Fineness \u2014 Specific surface shall not be less than c) 672\u00b14 h, not less than 53 MPa 225 m2/kg. 4. Delivery \u2014 Packed in specified bags of 50 kg, 25 kg, 10 kg, 5 kg, 2 kg or 1 kg or in bulk with tolerances * Ordinary portland cement 33 grade (fourth revision). + 43 Grade ordinary portland cement (first revision). specified in this standard. TABLE 1 CHEMICAL REQUIREMENTS FOR 53 GRADE ORDINARY PORTLAND CEMENT Sl No. Characteristic Requirement (1) (2) (3) i) Ratio of percentage of lime to percentages of silica Not greater than 1.02 and not less than 0.80 alumina and iron oxide ii) Ratio of percentage of alumina to that of iron oxide Not less than 0.66 iii) Insoluble residue, percent by mass (a) In caes no flyash, silica fume, rice hask ash and metakoline in added - Not more than",
+            "Specification for 53 Grade ordinary portland cement. 1.21 SP 21 : 2005 SUMMARY OF"
+        ],
+        "latency_seconds": 0.083
+    },
+    {
+        "id": "PUB-02",
+        "query": "I need to comply with the regulations for coarse and fine aggregates derived from natural sources intended for use in structural concrete.",
+        "expected_standards": [
+            "IS 383: 1970"
+        ],
+        "retrieved_standards": [
+            "IS 383:1970",
+            "IS 383 : 1970",
+            "IS 383 : 1970"
+        ],
+        "explanations": [
+            "Specification for coarse and fine aggregates from natural sources for concrete (second revision). 1.6 SP 21 : 2005 SUMMARY OF",
+            "Coarse and fine aggregates from natural sources for concrete (second revision) 1.5",
+            "COARSE AND FINE AGGREGATES FROM NATURAL SOURCES FOR CONCRETE (Second Revision) 1. Scope \u2014 Requirements for aggregates, crushed percent for concrete for wearing surfaces (such as or uncrushed, derived from natural sources for use in runways and roads) and 45 percent for other concrete. the production of structural concrete including mass 2.4 Aggregate impact value (alternative to 2.3) shall concrete works. not exceed 30 percent by weight for concrere for wearing surface and 45 percent by weight for other concrete. 2. Requirements 2.5 Aggregate abrasion value shall not exceed 30 2.1 Aggregates shall consist of naturally occurring percent for concrete for wearing surfaces and 50 percent stones, gravel and sand, and shall be hard, strong, for other concrete. dense, durable, clear and free from veins, adherent 2.6 Soundness (for concrete liable to be exposed to coating and injurious amounts of disintegrated pieces frost action) \u2014 Coarse and fine aggregates shall pass and deleterious substan"
+        ],
+        "latency_seconds": 0.032
+    },
+    {
+        "id": "PUB-03",
+        "query": "What is the official specification for manufacturing precast concrete pipes, both with and without reinforcement, for water mains?",
+        "expected_standards": [
+            "IS 458: 2003"
+        ],
+        "retrieved_standards": [
+            "IS 458 : 2003",
+            "IS 458 : 2003",
+            "IS 458 : 2003"
+        ],
+        "explanations": [
+            "Specification for precast concrete pipes (with and without reinforcement) (fourth revision). 1.68 SP 21 : 2005 SUMMARY OF",
+            "Precast concrete pipes (with and without reinforcement) (fourth revision) 1.68",
+            "PRECAST CONCRETE PIPES (WITH AND WITHOUT REINFORCEMENT) \u2013 SPECIFICATION (Fourth Revision) 1. Scope \u2014 Requirements for reinforced and c) Over 50 mm up to and : + 4 mm unreinforced precast cement concrete pipes, of both including 65 mm \u2013 2 pressure and non- pressure varieties used for water d) Over 65 mm up to : + 5 mm mains, sewers, culverts and irrigation. The requirements and including 80 mm \u2013 2.5 for collars are also covered by this standard. e) Over 80 mm up to and : + 6 mm including 95 mm : \u2013 3 2. Classification \u2014 For the purpose of this f) Over 95 mm : +7mm standard, concrete pipes shall be classifed as per clause \u20133.5 4.1 of the standard Note \u2014 In case of pipes with flexible rubber ring joints, the tolerance on thickness near the ends wiill have to be reduced. 3. Dimensions and Tolerances Near the rubber ring joints, the tolerance on thickness shall be as given in Tables 13 to 19 in case of pipes manufactured by 3.1 Dimension spinning process and as given in Table 15 and Table 16"
+        ],
+        "latency_seconds": 0.03
+    },
+    {
+        "id": "PUB-04",
+        "query": "Our company is shifting to manufacturing hollow and solid lightweight concrete masonry blocks. What standard outlines the dimensions and physical requirements?",
+        "expected_standards": [
+            "IS 2185 (Part 2): 1983"
+        ],
+        "retrieved_standards": [
+            "IS 2185 (PART 1) : 1979",
+            "IS 12440 : 1988",
+            "IS 1127 : 1970"
+        ],
+        "explanations": [
+            "CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (Second Revision) 1. Scope \u2014 Requirements for the following concrete Note 2 \u2014 Block shall also be manufactured in half lengths of masonry building units which are used in construction 200, 250 or 300 mm. of loadbearing and partition walls: 3.2 Tolerances \u2014 Not more than \u00b1 5 mm in length and \u00b13 mm in height and width of unit. a) Hollow (open and closed cavity) load bearing concrete blocks. 3.3 Face shells and webs shall increase in thickness b) Hollow (open and closed cavity) non-load from the bottom to the top of unit; the thickness shall bearing concrete blocks, and be not less than the value given in Table 1, as c) Solid load-bearing concrete blocks. appropriate. Note\u2014Concrete masonry units are used for both load-bearing 4. Classification \u2014 see Table 2 and non-load bearing walls, for partitions and panel walls, as backing for other types of facing materials, for piers, pilasters and columns, for retaining walls, garden wa",
+            "PRECAST CONCRETE STONE MASONRY BLOCKS 1. Scope \u2014 Requirements of precast concrete stone 3.2 For 200, 150 and 100 mm nominal thick walls, the masonry blocks, used in the construction of load blocks shall be of 300 \u00d7 200 \u00d7 150 mm, 300 \u00d7 150 \u00d7 150 bearing and non-load bearing walls. mm and 300 \u00d7 100 \u00d7 150 mm nominal size respectively. 3.3 For accommodating vertical reinforcement required 2. Terminology in earthquake resistant construction special block of half-width and with semi-circular recess in it (see Fig.1 2.1Concrete Stone Masonry Block \u2014 A precast of the standard) shall be used. These dimensions are cement concrete solid block having stone spalls in it suitable for 200 mm thick wall. Similar blocks shall be (25-30 percent of block volume) and cement concrete made for walls of thickness greater than 200 mm. with dense stone aggregate and sand. It is 100 percent solid. 3.4 Tolerances \u2014 The maximum variation in the length of the units shall not be more than \u00b1 5 mm and maximum 2.2Ston",
+            "DIMENSIONS AND WORKMANSHIP OF NATURAL BUILDING STONES FOR MASONRY WORK (First Revision) 1. Scope \u2014 Recommendations for the dimensions and workmanship of natural building stones used for various types of stone masonry. 2. Dimensions and Tolerances 2.1 Dimesion \u2013 See Table 1. (based on thickness of mortar joints 3 mm for ashlar masonry, 6 mm for block in course and 10 mm for square rubble). TABLE 1 DIMENSIONS OF NATURAL BUILDING STONES Sl.No. Type of Masonry Length Breath Height mm mm mm (1) (2) (3) (4) (5) i) Stones for ashlar 597 297 297 697 347 347 797 397 397 i) Stones for block in course 394 194 194 494 244 244 iii) Stones for square rubble 90 90 90 140 90,140 90,140 190 90,140,190 90,140,190 240 90,140,190 90,140,190 290 90,140,190,240 90,140,190,240 390 90,140,190,240,290 90,140,190,240,290 440 90,140,190,240,290 90,140,190,240,290 490 90,140,190,240,290 90,140,190,240,290 590 90,140.190,240,290 90,140,190,240,290 iv) Stones for random rubble. May be of any size and shape but not "
+        ],
+        "latency_seconds": 0.031
+    },
+    {
+        "id": "PUB-05",
+        "query": "Looking for the standard detailing corrugated and semi-corrugated asbestos cement sheets used for roofing and cladding.",
+        "expected_standards": [
+            "IS 459: 1992"
+        ],
+        "retrieved_standards": [
+            "IS 459 : 1992",
+            "IS 13008:1990",
+            "IS 459 : 1992"
+        ],
+        "explanations": [
+            "Corrugated and semi corrugated asbestos cement sheets. 1.50",
+            "Specification for shallow corrugated asbestos cement sheets. 1.67 SP 21 : 2005 SUMMARY OF",
+            "CORRUGATED AND SEMI-CORRUGATED ASBESTOS CEMENT SHEETS (Third Revision) 1. Scope\u2014 Covers corrugated and semi-corrigutated 3.2 Impermeability test (optional) \u2014 The specimens asbestos cement sheets, designed to provide structural shall not show during 24 hours of test any formation of weather exposed surfaces of roofs and building walls of drops of water except traces of moisutre on the lower industrial, residential, agricultural commercial and surface. institutional types of buildings and for decorative and 3.3 Frost cracking test (optional) \u2014 Shall not show other purposes. any cracking, surface alteration or delamination. 2. Dimensions and Tolerances \u2014 See Table 1. 3.4 Density (Optional test) \u2014 Shall not be less than 1.4g/cm3. 3. Physical and Mechanical Characteristics 4. Finish \u2014 Shall have rectangular shape; corrugation true and regular; edges strainght and clean and square. 3.1 The load bearing capacity of corrugated and semi- corrugated sheets shall be not less than 5 N/mm width of "
+        ],
+        "latency_seconds": 0.027
+    },
+    {
+        "id": "PUB-06",
+        "query": "What is the Indian Standard covering the manufacture, chemical, and physical requirements for Portland slag cement?",
+        "expected_standards": [
+            "IS 455: 1989"
+        ],
+        "retrieved_standards": [
+            "IS 455:1989",
+            "IS 12089:1987",
+            "IS 455 : 1989"
+        ],
+        "explanations": [
+            ". Specification for portland slag cement (fourth revision). 1.11 SP 21 : 2005 SUMMARY OF",
+            "\u2020 has been found suitable for the manufacture 4. Delivery \u2014 Packed in specified bags of of Portland slag cement. 50 kgs or 25 kgs net or in builk with tolerances specified 3. Physical Requirements in the standard. 3.1Fineness \u2014 Specific surface , not less than 225 m2/kg. * Method for colorimetric analysis of hydraulic cement. \u2020 Granulated slag for manufacture of Portland slag Cement. Note \u2014 For methods of tests, refer to relevant parts of",
+            "Portland slag cement (fourth revision) 1.11"
+        ],
+        "latency_seconds": 0.016
+    },
+    {
+        "id": "PUB-07",
+        "query": "We are setting up a plant to produce Portland pozzolana cement that is calcined clay based. What is the applicable standard?",
+        "expected_standards": [
+            "IS 1489 (Part 2): 1991"
+        ],
+        "retrieved_standards": [
+            "IS 1489 (PART 2) :1991",
+            "IS 1489(Part 2):1991",
+            "IS 269:1989"
+        ],
+        "explanations": [
+            "PORTLAND POZZOLANA CEMENT PART 2 CALCINED CLAY BASED (Third Revision) 3. Chemical Requirement \u2014 See TABLE 1. 1. Scope \u2014 Manufacture, Physical and Chemical requriements of Portland- pozzolana cement 4 Physical requirements manufactured by using calcined clay pozzolana or a mixture of calcined clay and fly ash pozzolana. 4.1Fineness 2. Raw Materials Specific surface of Portland pozzolana cement shall be not less than 300 m2/kg. 2.1Pozzolana 4.2Soundness \u2014 Expansion of unaerated sample. 2.1.1 Pozzolana used shall be either calcined clay (i) Not more than 10 mm by \u2018Le Chatelier\u2019 Method. pozzolana conforming to",
+            "Specification for Portland pozzolana cement Part 2 calcined clay based (third revision). 1.13 SP 21 : 2005 SUMMARY OF",
+            "\u2021 c) At 672\u00b14 h 33 MPa , Min * Calcined clay pozzolana (second revision). 5 Delivery Packed in specified bags of 50 kgs or 25, \u2020 Fly ash for use as pozzolana and admiscture (first revision). kgs net or in bulk with toerances specified in the \u2021 Ordinary portland cement 33 Grade (fourth revision). standard. TABLE 1 CHEMICAL REQUIREMENTS OF PORTLAND- POZZOLANA CEMENT SI No. Characteristic Requirement (1) (2) (3) i) Loss on ignition, percent by mass, Max 5.0 ii) Magnesia (MGO), percent by mass, Max 6.0 iii) Sulphuric anhydrid (SO),percent by mass, Max 3.0 3 4.0(100\u2212x) x+ iv) Insoluble material, percent by mass, Max 100 where x is the declared percenttage of pozzolana in the given Portland pozzolana cement Note \u2014 For methods of tests, refer to relevant parts of"
+        ],
+        "latency_seconds": 0.021
+    },
+    {
+        "id": "PUB-08",
+        "query": "Which standard applies to masonry cement used for general purposes where mortars for masonry are required, but not intended for structural concrete?",
+        "expected_standards": [
+            "IS 3466: 1988"
+        ],
+        "retrieved_standards": [
+            "IS 3466 : 1988",
+            "IS 3466:1988",
+            "IS 2185 (PART 1) : 1979"
+        ],
+        "explanations": [
+            "MASONRY CEMENT (Second Revision) 1. Scope \u2014 Requirements for masonry cement to be 2. Physical Requirements \u2014 See TABLE 1. used for all general purposes where mortars for masonry are required. Masonry cement is, however, not intended 3. Delivery \u2014 Packed in specified bags of 50 kg or 25 for use in structural concrete, for flooring and foundation kg net or in bulk with tolerance as given in the standard. work or for reinforced and prestressed concrete works. TABLE 1 PHYSICAL REQUIREMENTS Sl NO. Characteristic Requirements i) Fineness\u2014 Residue on 45-micron IS Sieve, Max percent (by wet sieving) 15 ii) Setting Time (by Vicat Apparatus )\u2014 a) Initial, Min 90 min b) Final, Max 24 h iii) Soundness: a) Le- Chatelier Max 10 mm b) Autoclave expansion, Max 1 percent iv) Compressive Strength\u2014Average compressive strength of not less than 3 mortar cubes of 50 mm size, composed of 1 part masonry cement and 3 parts standard stand by volume, Min 7 days 2.5 MPa 28 days 5 MPa v) Air Content\u2014Air content of",
+            "Specification for Masonry Cement (second revision). 1.14 SP 21 : 2005 SUMMARY OF",
+            "CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (Second Revision) 1. Scope \u2014 Requirements for the following concrete Note 2 \u2014 Block shall also be manufactured in half lengths of masonry building units which are used in construction 200, 250 or 300 mm. of loadbearing and partition walls: 3.2 Tolerances \u2014 Not more than \u00b1 5 mm in length and \u00b13 mm in height and width of unit. a) Hollow (open and closed cavity) load bearing concrete blocks. 3.3 Face shells and webs shall increase in thickness b) Hollow (open and closed cavity) non-load from the bottom to the top of unit; the thickness shall bearing concrete blocks, and be not less than the value given in Table 1, as c) Solid load-bearing concrete blocks. appropriate. Note\u2014Concrete masonry units are used for both load-bearing 4. Classification \u2014 see Table 2 and non-load bearing walls, for partitions and panel walls, as backing for other types of facing materials, for piers, pilasters and columns, for retaining walls, garden wa"
+        ],
+        "latency_seconds": 0.021
+    },
+    {
+        "id": "PUB-09",
+        "query": "Looking for the standard that details the composition, manufacture, and testing of supersulphated cement, particularly for marine works or aggressive water conditions.",
+        "expected_standards": [
+            "IS 6909: 1990"
+        ],
+        "retrieved_standards": [
+            "IS 6909:1990",
+            "IS 6909 : 1990",
+            "IS 6909 : 1990"
+        ],
+        "explanations": [
+            "Specification for supersulphated cement (first revision). 1.16 SP 21 : 2005 SUMMARY OF",
+            "SUPERSULPHATED CEMENT (First Revision) 1. Scope\u2014Requirements for composition, Sulphuric anhydride 6 percent, Min manufacture and testing of supersulphated cement Sulphide sulphur 1.5 percent, Max (SSC). 4. Physical Requirements 2. Application \u2014Supersulphated cement has been successfully used in a variety of aggressive conditions, for example, for marine works, mass concrete jobs to 4.1 Fineness \u2014 It shall have a fineness (specific resist the attack by aggressive water, reinforced concrete surface) of not less than 400 m2/kg. pipes in ground water, concrete construction in sulphate 4.2 Soundness \u2014 Expansion not more than 5 mm by Le bearing soils, and in chemical works under conditions Chatelier method involving exposure to high concentrations of sulphates or weak solutions of mineral acids. It has been used for 4.3 Setting Time \u2014 Initial setting time: Not less than 30 the underside of bridges over railways and for concrete minutes, final setting time: not more than 10 hour. sewers carry",
+            "Super sulphated cement 1.16"
+        ],
+        "latency_seconds": 0.018
+    },
+    {
+        "id": "PUB-10",
+        "query": "Our company manufactures White Portland cement for architectural and decorative purposes. Which standard governs its physical and chemical requirements?",
+        "expected_standards": [
+            "IS 8042: 1989"
+        ],
+        "retrieved_standards": [
+            "IS 8042 : 1989",
+            "IS 8042:1989",
+            "IS 269:1989"
+        ],
+        "explanations": [
+            "WHITE PORTLAND CEMENT (Second Revision) 1 Scope prepared from white portland cement shall not be less than 90 percent of those specified for 33 grade ordinary 1.1 Manufacture and chemical and physical Portland cement. requirements of white Portland cement. 4. Degree of Whiteness \u2014 The reflectance of neat Note\u2013White Portland cement is generally used for architectural cement ring prepared and tested in accordance with the and decorative purposes and is generally meant for non- test specified shall not be less than 70 percent. structural use. It is made from raw materials containing very little iron oxide and magnesium oxide. 2. Chemical Reqrirements \u2014 See Table 1. 5. Delivery\u2014 Packed in specified bags of 50 kg, 10 kg, 5 kg, 2 kg or 1 kg net or in bulk subject to tolerances specified in the standard. 3. Physical Requirements \u2014 Physical require- ments of white portland cement shall be as laid down in",
+            "Specification for white Portland cement (second revision). 1.18 SP 21 : 2005 SUMMARY OF",
+            "Specification for ordinary portland cement, 33 grade (fourth revision). 1.10 SP 21 : 2005 SUMMARY OF"
+        ],
+        "latency_seconds": 0.013
+    }
+]

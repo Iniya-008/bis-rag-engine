@@ -40,6 +40,8 @@ def process_queries(input_path, output_path, retriever):
         # Build the structured output block
         results.append({
             "id": query_id,
+            "query": query_text,
+            "expected_standards": item.get("expected_standards", []),
             "retrieved_standards": standard_ids,
             "explanations": explanations,
             "latency_seconds": latency
