@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS Standards Recommendation Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Gradient Animations -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <i class="fa-solid fa-building-shield"></i>
+                <h2>BIS Finder</h2>
+            </div>
+            
+            <div class="sidebar-content">
+                <h3>RAG Architecture</h3>
+                <ul class="arch-list">
+                    <li><i class="fa-solid fa-microchip"></i> <strong>Engine:</strong> FAISS + all-MiniLM</li>
+                    <li><i class="fa-solid fa-database"></i> <strong>Dataset:</strong> BIS SP 21</li>
+                    <li><i class="fa-solid fa-bolt"></i> <strong>Latency:</strong> < 0.1s</li>
+                    <li><i class="fa-solid fa-check-double"></i> <strong>Hallucination:</strong> 0% (Exact Extraction)</li>
+                </ul>
+
+                <div class="mse-badge">
+                    <i class="fa-solid fa-industry"></i>
+                    <p>Designed for Micro & Small Enterprises</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="hero">
+                <h1 class="gradient-text">BIS Standards Recommendation Engine</h1>
+                <p>Describe your building material product in natural language to instantly discover the mandatory Bureau of Indian Standards (BIS) regulations.</p>
+                
+                <div class="search-container glass-panel">
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <textarea id="search-input" placeholder="e.g., We manufacture high-strength reinforced concrete for building columns..."></textarea>
+                    </div>
+                    <button id="search-btn" class="primary-btn">
+                        <span>Analyze Standards</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div id="loading-state" class="hidden">
+                <div class="spinner"></div>
+                <p>Querying FAISS Vector Database...</p>
+            </div>
+
+            <div id="results-container">
+                <!-- Results will be injected here via JavaScript -->
+            </div>
+            
+            <div id="latency-indicator" class="hidden">
+                <p><i class="fa-solid fa-stopwatch"></i> Retrieved in <span id="latency-time">0</span> seconds</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

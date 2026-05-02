@@ -53,10 +53,11 @@ An AI-powered Recommendation Engine tailored for Building Materials.
 ---
 
 ## Slide 6: Demo Highlights
-*(Make sure to insert screenshots of the Streamlit UI here!)*
-- **Sleek UI:** Professional dark-themed compliance portal.
-- **Speed:** Responses consistently under 0.1 seconds.
-- **Transparency:** Displays exact match confidence and standard rationales.
+*(Make sure to insert screenshots of the custom web UI here!)*
+- **Premium UI:** Custom dark-themed portal built with pure HTML/CSS/JS.
+- **Glassmorphism:** Modern visual design with dynamic micro-animations.
+- **Speed:** Responses consistently under 0.1 seconds via FastAPI backend.
+- **Transparency:** Displays pseudo-confidence scores and exact standard rationales.
 
 ---
 
@@ -75,4 +76,4 @@ An AI-powered Recommendation Engine tailored for Building Materials.
 - Lowers compliance barriers for small manufacturers.
 - Free, scalable, and open-source foundation.
 **Thank You!**
-- Built using: Python, Streamlit, FAISS, Sentence-Transformers.
+- Built using: Python, FastAPI, Vanilla JS/CSS, FAISS, Sentence-Transformers.

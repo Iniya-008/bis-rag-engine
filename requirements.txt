@@ -1,5 +1,6 @@
 pdfplumber
 sentence-transformers
 faiss-cpu
-streamlit
+fastapi
+uvicorn
 pandas
