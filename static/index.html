@@ -47,6 +47,9 @@
                     <div class="input-wrapper">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
                         <textarea id="search-input" placeholder="e.g., We manufacture high-strength reinforced concrete for building columns..."></textarea>
+                        <button id="mic-btn" class="icon-btn" title="Speak your query">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
                     </div>
                     <button id="search-btn" class="primary-btn">
                         <span>Analyze Standards</span>
@@ -62,6 +65,12 @@
 
             <div id="results-container">
                 <!-- Results will be injected here via JavaScript -->
+            </div>
+            
+            <div id="action-bar" class="hidden" style="display: flex; justify-content: center; margin-top: 1rem;">
+                <button id="download-btn" class="secondary-btn">
+                    <i class="fa-solid fa-file-pdf"></i> Download Compliance Report
+                </button>
             </div>
             
             <div id="latency-indicator" class="hidden">

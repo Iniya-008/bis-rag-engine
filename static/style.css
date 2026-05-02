@@ -320,6 +320,92 @@ textarea::placeholder {
     margin-top: 1rem;
 }
 
+}
+
+/* New Buttons: Mic & Download */
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    margin-top: 0.3rem;
+}
+
+.icon-btn:hover {
+    color: var(--accent-primary);
+    transform: scale(1.1);
+}
+
+.icon-btn.recording {
+    color: #ef4444;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+    70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.secondary-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Print Styles for PDF Export */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    .blob, .sidebar, .hero, #action-bar, #loading-state {
+        display: none !important;
+    }
+    .main-content {
+        gap: 1rem;
+    }
+    .glass-panel {
+        background: none !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+    }
+    .result-title h2 {
+        color: black !important;
+    }
+    .result-title h3, .rationale-box h4 {
+        color: #333 !important;
+    }
+    .confidence-badge {
+        border: 1px solid #333 !important;
+        color: black !important;
+    }
+    .rationale-box {
+        border-left-color: #333 !important;
+        background: #f9f9f9 !important;
+    }
+    .rationale-box p {
+        color: #000 !important;
+    }
+}
+
 .hidden {
     display: none !important;
 }

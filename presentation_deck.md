@@ -52,12 +52,12 @@ An AI-powered Recommendation Engine tailored for Building Materials.
 
 ---
 
-## Slide 6: Demo Highlights
+## Slide 6: Demo Highlights & Killer Features
 *(Make sure to insert screenshots of the custom web UI here!)*
-- **Premium UI:** Custom dark-themed portal built with pure HTML/CSS/JS.
-- **Glassmorphism:** Modern visual design with dynamic micro-animations.
+- **Voice-to-Text Search 🎙️:** Integrated Web Speech API for highly accessible hands-free queries.
+- **Instant PDF Export 📄:** One-click compliance report generation for enterprise archiving.
+- **Premium UI:** Custom dark-themed glassmorphism portal built with pure HTML/CSS/JS.
 - **Speed:** Responses consistently under 0.1 seconds via FastAPI backend.
-- **Transparency:** Displays pseudo-confidence scores and exact standard rationales.
 
 ---
 

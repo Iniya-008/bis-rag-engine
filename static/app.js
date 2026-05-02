@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsContainer = document.getElementById('results-container');
     const latencyIndicator = document.getElementById('latency-indicator');
     const latencyTime = document.getElementById('latency-time');
+    const micBtn = document.getElementById('mic-btn');
+    const downloadBtn = document.getElementById('download-btn');
+    const actionBar = document.getElementById('action-bar');
 
     searchBtn.addEventListener('click', performSearch);
+    downloadBtn.addEventListener('click', () => window.print());
     
     // Allow 'Enter' key to trigger search if shift is not pressed
     searchInput.addEventListener('keydown', (e) => {
@@ -16,6 +20,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Web Speech API Setup
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = 'en-IN'; // Indian English for better accuracy with local terms
+
+        recognition.onstart = () => {
+            micBtn.classList.add('recording');
+            searchInput.placeholder = 'Listening...';
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            searchInput.value = transcript;
+            performSearch(); // Auto-search after speaking
+        };
+
+        recognition.onerror = (event) => {
+            console.error('Speech recognition error:', event.error);
+            micBtn.classList.remove('recording');
+            searchInput.placeholder = 'e.g., We manufacture high-strength reinforced concrete for building columns...';
+            alert('Microphone access denied or error occurred.');
+        };
+
+        recognition.onend = () => {
+            micBtn.classList.remove('recording');
+            searchInput.placeholder = 'e.g., We manufacture high-strength reinforced concrete for building columns...';
+        };
+
+        micBtn.addEventListener('click', () => {
+            recognition.start();
+        });
+    } else {
+        micBtn.style.display = 'none'; // Hide if browser doesn't support it
+        console.warn('Speech Recognition API not supported in this browser.');
+    }
+
     async function performSearch() {
         const query = searchInput.value.trim();
         if (!query) return;
@@ -23,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // UI updates for loading
         resultsContainer.innerHTML = '';
         latencyIndicator.classList.add('hidden');
+        actionBar.classList.add('hidden');
         loadingState.classList.remove('hidden');
 
         try {
@@ -45,9 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             renderResults(data.results);
             
-            // Update latency
+            // Update latency and show actions
             latencyTime.textContent = data.latency;
             latencyIndicator.classList.remove('hidden');
+            actionBar.classList.remove('hidden');
 
         } catch (error) {
             console.error('Error fetching search results:', error);
