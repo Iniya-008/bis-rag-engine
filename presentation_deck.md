@@ -1,18 +1,8 @@
 # BIS Standards Recommendation Engine: Presentation Draft
 
-You can copy and paste the text below into your PowerPoint or Canva template. Ensure you export it as `presentation.pdf` before submitting!
-
 ---
 
-## Slide 1: Title Slide
-**Title:** AI-Powered BIS Standards Recommendation Engine
-**Subtitle:** Accelerating MSE Compliance with Retrieval-Augmented Generation
-**Track:** AI / RAG
-**Team:** [Your Team Name]
-
----
-
-## Slide 2: Problem Statement
+## (1) Problem Statement
 **The Challenge:**
 Indian Micro and Small Enterprises (MSEs) spend weeks manually sifting through complex Bureau of Indian Standards (BIS) documents.
 **The Impact:**
@@ -22,7 +12,7 @@ Automate the discovery of relevant BIS standards from simple product description
 
 ---
 
-## Slide 3: The Solution
+## (2) Solution Overview
 **Our Solution:**
 A zero-hallucination, AI-powered Recommendation Engine tailored for the Building Materials category.
 **Key Value Propositions:**
@@ -32,31 +22,26 @@ A zero-hallucination, AI-powered Recommendation Engine tailored for the Building
 
 ---
 
-## Slide 4: Tech Stack
-**Frontend (User Interface):**
-- **Vanilla HTML/CSS/JS:** Ultra-fast, lightweight, and completely custom.
-- **Design System:** Dark-mode glassmorphism.
-- **Web APIs:** Integrated Web Speech API for voice recognition.
-
-**Backend & Data (Engine):**
-- **Python & FastAPI:** Blazing fast asynchronous backend server.
-- **Sentence-Transformers:** `all-MiniLM-L6-v2` for dense semantic vectorization.
-- **FAISS (Meta):** High-speed CPU vector indexing (L2 distance metric) for instant retrieval.
-- **pdfplumber:** Advanced regex chunking of the massive 7.5MB SP 21 Catalog.
+## (3) System Architecture
+**The Stack:**
+- **Frontend:** Ultra-fast Vanilla HTML/CSS/JS with Dark-Mode Glassmorphism.
+- **Backend:** Python & FastAPI for asynchronous, blazing-fast API serving.
+- **AI Core:** `sentence-transformers` for dense embeddings and `FAISS` for high-speed CPU vector indexing.
+**The Flow:**
+User Input (Text/Voice) -> FastAPI -> FAISS Nearest Neighbor Search -> Direct Text Extraction -> UI Display.
 
 ---
 
-## Slide 5: The Workflow
-**How the Engine Works:**
-1. **Ingestion:** Processed the 7.5MB official BIS SP 21 PDF into 2,571 distinct semantic chunks.
-2. **Indexing:** Vectors are mapped into the FAISS semantic space.
-3. **Query:** User types (or speaks) a product description.
-4. **Retrieval:** Engine performs a Top-K nearest-neighbor search to find the closest matching standards.
-5. **Generation:** Extracts the exact text directly from the source document (bypassing creative LLMs) to ensure zero hallucination.
+## (4) Chunking & Retrieval Strategy
+**Chunking:**
+- **Strategy:** 1 Standard = 1 Semantic Chunk.
+- **Process:** We used `pdfplumber` and advanced Regex to break down the massive 7.5MB SP 21 Catalog into 2,571 distinct semantic blocks.
+**Retrieval:**
+- We map these chunks into a high-dimensional space. We use L2 distance metrics within FAISS to perform extremely fast nearest-neighbor lookups, optimizing for our sub-1-second latency goal.
 
 ---
 
-## Slide 6: Killer Features & Demo
+## (5) Demo Highlights
 *(Make sure to insert screenshots of the custom web UI here!)*
 - **Voice-to-Text Search 🎙️:** Integrated Web Speech API for highly accessible hands-free queries for factory workers.
 - **Instant PDF Export 📄:** One-click compliance report generation for enterprise archiving.
@@ -65,7 +50,7 @@ A zero-hallucination, AI-powered Recommendation Engine tailored for the Building
 
 ---
 
-## Slide 7: Evaluation Results
+## (6) Evaluation Results
 **Automated Metrics Achieved (against the official public test set):**
 - **Hit Rate @3:** 90.00% *(Target >80%)* 🏆
 - **MRR @5:** 0.9000 *(Target >0.7)* 🏆
@@ -74,11 +59,19 @@ A zero-hallucination, AI-powered Recommendation Engine tailored for the Building
 
 ---
 
-## Slide 8: Business Impact
+## (7) Impact on MSEs
 **Scaling "Make in India":**
 - Reduces standard discovery time from weeks to seconds.
 - Massively lowers compliance barriers for small manufacturers.
 - Built on a free, scalable, and open-source foundation.
 - Ready to scale to all 20,000+ BIS standards!
 
-**Thank You!**
+---
+
+## (8) Team & Acknowledgements
+**Team:** [Your Team Name]
+**Members:** [List your team members here]
+
+**Acknowledgements:**
+Thank you to the BIS Hackathon organizers for the challenging dataset. 
+- **Tools Used:** Python, FastAPI, Vanilla JS/CSS, FAISS, Sentence-Transformers, pdfplumber.
